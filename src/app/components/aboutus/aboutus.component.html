@@ -1,0 +1,27 @@
+<div class="container mt">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Companyname</th>
+        <th>Address</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>AdditionalIntermation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of FormDataList">
+        <td>{{ data.First_name }}</td>
+        <td>{{ data.Last_nmae }}</td>
+        <td>{{ data.Company_name }}</td>
+        <td>{{ data.Adress }}</td>
+        <td>{{ data.Email }}</td>
+        <td>{{ data.Phone }}</td>
+        <td>{{ data.Addititonal_Information }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<app-home (FormSubmit)="GetFormSubmit($event)"></app-home>

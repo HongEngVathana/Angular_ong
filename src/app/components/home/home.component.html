@@ -1,0 +1,130 @@
+<div class="container mt">
+  <div class="row">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 mt-3">
+      <img class="img-fluid" src="../../assets/welcomeimg.gif" alt="" />
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+      <form>
+        <!-- 2 column grid layout with text inputs for the first and last names -->
+        <div class="row mb-4">
+          <div class="col">
+            <div data-mdb-input-init class="form-outline">
+              <input
+                name="firstname"
+                [ngModelOptions]="{ standalone: true }"
+                [(ngModel)]="FormData.First_name"
+                type="text"
+                id="form6Example1"
+                class="form-control"
+              />
+              <label class="form-label" for="form6Example1">First name</label>
+            </div>
+          </div>
+          <div class="col">
+            <div data-mdb-input-init class="form-outline">
+              <input
+                name="lastname"
+                [ngModelOptions]="{ standalone: true }"
+                [(ngModel)]="FormData.Last_nmae"
+                type="text"
+                id="form6Example2"
+                class="form-control"
+              />
+              <label class="form-label" for="form6Example2">Last name</label>
+            </div>
+          </div>
+        </div>
+
+        <div data-mdb-input-init class="form-outline mb-4">
+          <input
+            name="companyname"
+            [ngModelOptions]="{ standalone: true }"
+            [(ngModel)]="FormData.Company_name"
+            type="text"
+            id="form6Example3"
+            class="form-control"
+          />
+          <label class="form-label" for="form6Example3">Company name</label>
+        </div>
+
+        <!-- Text input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+          <input
+            name="address"
+            [ngModelOptions]="{ standalone: true }"
+            [(ngModel)]="FormData.Adress"
+            type="text"
+            id="form6Example4"
+            class="form-control"
+          />
+          <label class="form-label" for="form6Example4">Address</label>
+        </div>
+
+        <!-- Email input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+          <input
+            name="email"
+            [ngModelOptions]="{ standalone: true }"
+            [(ngModel)]="FormData.Email"
+            type="email"
+            id="form6Example5"
+            class="form-control"
+          />
+          <label class="form-label" for="form6Example5">Email</label>
+        </div>
+
+        <!-- Number input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+          <input
+            name="phone"
+            [ngModelOptions]="{ standalone: true }"
+            [(ngModel)]="FormData.Phone"
+            type="number"
+            id="form6Example6"
+            class="form-control"
+          />
+          <label class="form-label" for="form6Example6">Phone</label>
+        </div>
+
+        <!-- Message input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+          <textarea
+            name="imformation"
+            [ngModelOptions]="{ standalone: true }"
+            [(ngModel)]="FormData.Addititonal_Information"
+            class="form-control"
+            id="form6Example7"
+            rows="4"
+          ></textarea>
+          <label class="form-label" for="form6Example7"
+            >Additional information</label
+          >
+        </div>
+
+        <!-- Checkbox -->
+        <div class="form-check d-flex justify-content-center mb-4">
+          <input
+            class="form-check-input me-2"
+            type="checkbox"
+            value=""
+            id="form6Example8"
+            checked
+          />
+          <label class="form-check-label" for="form6Example8">
+            Create an account?
+          </label>
+        </div>
+
+        <!-- Submit button -->
+        <button
+          data-mdb-ripple-init
+          type="button"
+          class="btn btn-primary btn-block mb-4"
+          (click)="onSubmit()"
+        >
+          Place order
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
